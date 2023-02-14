@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* animation: show 0.5s 0.2s none; */
+}
+
+.home .icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-item .nav-link {
+  position: relative;
+}
+
+.nav-item .nav-link.active::after {
+  content: "  ";
+  display: inline-block;
+  position: absolute;
+  top: 110%;
+  right: 10%;
+  width: 60px;
+  height: 2px;
+  background-color: white;
+}
+
+.moved::after {
+  content: "|";
+  font-weight: bold;
+  animation: words infinite 7s;
+}
+@keyframes words {
+  0% {
+    content: "|";
+  }
+  2.5% {
+    content: "D|";
+  }
+  5% {
+    content: "De|";
+  }
+  7.5% {
+    content: "Dev|";
+  }
+  10% {
+    content: "Deve|";
+  }
+  12.5% {
+    content: "Devel|";
+  }
+  15% {
+    content: "Develo|";
+  }
+  17.5% {
+    content: "Develop|";
+  }
+  20% {
+    content: "Develope|";
+  }
+  22.5% {
+    content: "Developer|";
+  }
+  25% {
+    content: "Develope|";
+  }
+  27.5% {
+    content: "Develop|";
+  }
+  30% {
+    content: "Develo|";
+  }
+  32.5% {
+    content: "Devel|";
+  }
+  35% {
+    content: "Deve|";
+  }
+  37.5% {
+    content: "Dev|";
+  }
+  40% {
+    content: "De|";
+  }
+  42.5% {
+    content: "D|";
+  }
+  45% {
+    content: "|";
+  }
+  47.5% {
+    content: "D|";
+  }
+  50% {
+    content: "De|";
+  }
+  52.5% {
+    content: "Des|";
+  }
+  55% {
+    content: "Desi|";
+  }
+  57.5% {
+    content: "Desig|";
+  }
+  60% {
+    content: "Design|";
+  }
+  62.5% {
+    content: "Designe|";
+  }
+  65% {
+    content: "Designer|";
+  }
+  67.5% {
+    content: "Designe|";
+  }
+  70% {
+    content: "Design|";
+  }
+  72.5% {
+    content: "Desig|";
+  }
+  75% {
+    content: "Desi|";
+  }
+  77.5% {
+    content: "Des|";
+  }
+  75% {
+    content: "De|";
+  }
+  72.5% {
+    content: "D|";
+  }
+  75% {
+    content: "|";
+  }
+  77.5% {
+    content: "L|";
+  }
+  80% {
+    content: "La|";
+  }
+  82.5% {
+    content: "Lar|";
+  }
+  85% {
+    content: "Lary|";
+  }
+  87.5% {
+    content: "Lar|";
+  }
+  90% {
+    content: "La|";
+  }
+  90% {
+    content: "L|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.about .image-section {
+  position: relative;
+}
+.about .image-section img {
+  width: 85%;
+  height: 85%;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+/* .about .image-section .doted-image {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  background-image: url("../images/dots.png");
+  background-repeat: repeat;
+  z-index: -1;
+  left: -5%;
+  top: 20%;
+} */
+.about .image-section::before {
+  content: "";
+
+  display: inline-block;
+  background: url("../images/dots.png");
+  background-repeat: repeat;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 20%;
+  left: 5%;
+  z-index: -1;
+  /* bottom: -40; */
+}
+
+.about .text-section .lines-section .progress {
+  height: 20px;
+}
+
+.about .text-section .btns a {
+  all: unset;
+  padding: 10px 15px;
+}
+.about .text-section .btns a:nth-child(1) {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.about .text-section .btns a:nth-child(1):hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.about .text-section .btns a:nth-child(2) {
+  transition: all 0.5s;
+}
+.about .text-section .btns a:nth-child(2):hover {
+  cursor: pointer;
+
+  color: white;
+  background-color: black;
+}
+
+.doted-back {
+  width: 200px;
+  height: 20px;
+  background: url("../images/dots.png");
+  background-repeat: repeat;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.services .item .icon {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.607);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.services .item:hover .icon {
+  color: white;
+  background-color: black;
+}
+
+.protofilio .protofilio-nav .item {
+  overflow: hidden;
+}
+.protofilio .protofilio-nav .item .layer {
+  top: 100%;
+  transition: all 0.5s;
+}
+.protofilio .protofilio-nav .item:hover .layer {
+  top: 0;
+}
+.protofilio .protofilio-nav .item .layer .icons {
+  display: flex;
+  justify-content: space-around;
+}
+.protofilio .protofilio-nav .item .layer .icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  transition: all 0.5s;
+}
+.protofilio .protofilio-nav .item .layer .icons .icon:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.protofilio .protofilio-nav .nav-link {
+  color: black !important;
+}
+.protofilio .protofilio-nav .nav-link.active {
+  background-color: transparent !important;
+  color: black;
+}
+.protofilio .protofilio-nav .nav-link {
+  position: relative;
+}
+
+.protofilio .protofilio-nav .nav-link::after {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  right: 20%;
+  background-color: black;
+}
+
+.testimonials .carousel-inner .catsousel-item {
+  transform: translate(-50%);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.blog .Blog-title .doted-back {
+  width: 200px;
+  height: 20px;
+  background: url("../images/dots.png");
+  background-repeat: repeat;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+.blog-slid .carousel-indicators [data-bs-target] {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.blog .item .card .image img {
+  transition: all 0.5s;
+}
+.blog .item .card .image img:hover {
+  transform: scale(1.2);
+}
+
+.contact .contact-info .item .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.436);
+  margin: auto;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.contact .contact-info .item .icon:hover {
+  background-color: black;
+  color: white;
+}
+.contact .contact-input .submit {
+  transition: all 0.5s;
+}
+.contact .contact-input .submit:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black !important;
+}
+.scroll {
+  background-color: rgba(0, 0, 0, 0.363);
+}
